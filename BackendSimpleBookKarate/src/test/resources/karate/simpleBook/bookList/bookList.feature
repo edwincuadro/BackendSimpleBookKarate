@@ -1,5 +1,5 @@
 @bookList
-Feature: Get book list
+Feature: Get available book list
   As QA Automation
   I want to get books
   To validate response and status code
