@@ -1,3 +1,4 @@
+@bookList
 Feature: Get book list
   As QA Automation
   I want to get books
