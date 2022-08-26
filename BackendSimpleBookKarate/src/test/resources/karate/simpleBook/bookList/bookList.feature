@@ -1,16 +1,17 @@
 @bookList
-Feature: Get available book list
+Feature: Get available book list and verify status
+
   As QA Automation
   I want to get books
   To validate response and status code
-  
-  Background: 
-    * url url
-    
-    Scenario: Get book list with ok stauts
-      * def responseBook = read('classpath:karate/simpleBook/bookList/resposeBook.json')
 
-      Given path 'books'
-      When method GET
-      Then status 200
-      And match response == responseBook
+  Background:
+    * url url
+
+  Scenario: Get book list with ok stauts
+    * def responseBook = read('classpath:karate/simpleBook/bookList/resposeBook.json')
+
+    Given path 'books'
+    When method GET
+    Then status 200
+    And match response == responseBook
