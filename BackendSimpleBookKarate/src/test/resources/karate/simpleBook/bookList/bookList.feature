@@ -7,8 +7,17 @@ Feature: Get book list and verify status
   Background:
     * url url
 
+<<<<<<< Updated upstream
   Scenario: Get book list with ok stauts
     * def responseBook = read('classpath:karate/simpleBook/bookList/resposeBook.json')
+=======
+      Given path 'books'
+      When method GET
+      Then status 200
+      And match response == responseBook
+
+  Scenario Outline: Validate status code Fail
+>>>>>>> Stashed changes
 
     Given path 'books'
     When method GET
